@@ -1,0 +1,22 @@
+import classNames from 'classnames/bind';
+import styles from './Button.module.scss';
+
+const cx = classNames.bind(styles);
+
+function Button({ to, href, primary = false, outline = false, rounded = false, children }) {
+    const Comp = 'button';
+
+    const classes = cx('wrapper', {
+        primary,
+        outline,
+        rounded,
+    });
+
+    return (
+        <Comp className={classes}>
+            <span>{children}</span>
+        </Comp>
+    );
+}
+
+export default Button;
