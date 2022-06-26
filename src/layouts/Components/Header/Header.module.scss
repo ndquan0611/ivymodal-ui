@@ -28,7 +28,7 @@ nav {
 
     > li {
         padding: 15px 0;
-        margin-right: 10px;
+        margin-right: 15px;
 
         > a {
             font-size: 1.2rem;
@@ -70,9 +70,9 @@ nav {
 .action-btn {
     position: relative;
     display: flex;
-    color: #5f5d5d;
+    color: #706f6f;
     background-color: transparent;
-    margin-right: 10px;
+    margin-right: 15px;
     cursor: pointer;
 }
 
@@ -82,11 +82,10 @@ nav {
     right: -20px;
     width: 1.6rem;
     height: 1.6rem;
-    line-height: 1.6rem;
     border-radius: 10px;
     font-size: 1.2rem;
     font-weight: normal;
     color: var(--white);
-    font-family: var(--font-family);
     background-color: var(--black);
+    font-family: var(--font-family);
 }

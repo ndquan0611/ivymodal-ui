@@ -1,5 +1,7 @@
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css'; // optional
 
 import config from '~/config';
 import images from '~/assets/images';
@@ -48,9 +50,11 @@ function Header() {
                         <>
                             <Search />
 
-                            <button className={cx('action-btn')}>
-                                <HeadphoneIcon />
-                            </button>
+                            <Tippy content="Headphone">
+                                <button className={cx('action-btn')}>
+                                    <HeadphoneIcon />
+                                </button>
+                            </Tippy>
                             <button className={cx('action-btn')}>
                                 <PersonIcon />
                             </button>
@@ -61,7 +65,7 @@ function Header() {
                         </>
                     ) : (
                         <>
-                            <Button primary>ĐĂNG NHẬP</Button>
+                            <Button primary>LOG IN</Button>
                             <Button outline>ĐĂNG KÝ</Button>
                         </>
                     )}

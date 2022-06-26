@@ -1,14 +1,18 @@
+.search-result {
+    width: 440px;
+}
+
 .search {
     --search-btn-width: 40px;
     --seach-height: 40px;
 
-    position: relative;
     width: 240px;
     height: var(--seach-height);
     display: flex;
     border-radius: 4px;
-    margin-right: 20px;
+    margin-right: 25px;
     border: 1px solid #e7e8e9;
+    overflow: hidden;
 
     input {
         flex: 1;

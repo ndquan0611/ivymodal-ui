@@ -21,6 +21,11 @@
     }
 }
 
+.icon + .title,
+.title + .icon {
+    margin-left: 10px;
+}
+
 // Button types
 .rounded {
     border-radius: 52px;
@@ -52,4 +57,10 @@
 
 .text {
     color: var(--black);
+}
+
+// Size
+.small {
+    padding: 8px 12px;
+    border-radius: 8px 0;
 }
