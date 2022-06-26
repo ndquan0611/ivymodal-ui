@@ -1,0 +1,34 @@
+.search {
+    --search-btn-width: 40px;
+    --seach-height: 40px;
+
+    position: relative;
+    width: 240px;
+    height: var(--seach-height);
+    display: flex;
+    border-radius: 4px;
+    margin-right: 20px;
+    border: 1px solid #e7e8e9;
+
+    input {
+        flex: 1;
+        height: 100%;
+        font-size: 1.2rem;
+        font-weight: 400;
+        background-color: transparent;
+        font-family: var(--font-family);
+    }
+
+    &:focus-within {
+        border-color: rgba(22, 24, 35, 0.2);
+    }
+}
+
+.search-btn {
+    width: var(--search-btn-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+}

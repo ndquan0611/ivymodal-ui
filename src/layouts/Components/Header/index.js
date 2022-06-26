@@ -11,7 +11,7 @@ import Search from '../Search';
 const cx = classNames.bind(styles);
 
 function Header() {
-    const currentUser = false;
+    const currentUser = true;
 
     return (
         <header className={cx('wrapper')}>
@@ -44,10 +44,10 @@ function Header() {
                 </Link>
 
                 <div className={cx('action')}>
-                    <Search />
-
                     {currentUser ? (
                         <>
+                            <Search />
+
                             <button className={cx('action-btn')}>
                                 <HeadphoneIcon />
                             </button>
@@ -56,11 +56,13 @@ function Header() {
                             </button>
                             <button className={cx('action-btn')}>
                                 <BagIcon />
+                                <div className={cx('badge')}>0</div>
                             </button>
                         </>
                     ) : (
                         <>
-                            <Button>Log in</Button>
+                            <Button primary>ĐĂNG NHẬP</Button>
+                            <Button outline>ĐĂNG KÝ</Button>
                         </>
                     )}
                 </div>

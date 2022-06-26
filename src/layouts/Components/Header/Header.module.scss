@@ -64,10 +64,29 @@ nav {
 // Action
 .action {
     display: flex;
+    align-items: center;
 }
 
-.search {
+.action-btn {
+    position: relative;
+    display: flex;
+    color: #5f5d5d;
+    background-color: transparent;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
-.search-btn {
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    width: 1.6rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--white);
+    font-family: var(--font-family);
+    background-color: var(--black);
 }

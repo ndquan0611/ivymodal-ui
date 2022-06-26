@@ -1,0 +1,55 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: 13px 24px;
+    border-radius: 16px 0;
+    border: 1px solid transparent;
+    background-color: var(--white);
+    font-family: var(--font-family);
+    user-select: none;
+    cursor: pointer;
+
+    + .wrapper {
+        margin-left: 16px;
+    }
+
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+// Button types
+.rounded {
+    border-radius: 52px;
+}
+
+.primary {
+    color: var(--white);
+    background-color: var(--black);
+    transition: 0.3s ease;
+
+    &:hover {
+        color: var(--black);
+        background-color: var(--white);
+        border-color: var(--black);
+    }
+}
+
+.outline {
+    color: var(--black);
+    border-color: currentColor;
+    transition: 0.3s ease;
+
+    &:hover {
+        border-color: currentColor;
+        color: var(--white);
+        background-color: var(--black);
+    }
+}
+
+.text {
+    color: var(--black);
+}

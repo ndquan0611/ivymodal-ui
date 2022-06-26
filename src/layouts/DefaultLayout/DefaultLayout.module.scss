@@ -2,5 +2,13 @@
 }
 
 .container {
+    border-bottom: 1px solid #d1d2d4;
     margin-top: var(--default-layout-header-height);
+}
+
+.content {
+    max-width: 100%;
+    width: var(--default-layout-width);
+    padding: 0 var(--default-layout-horizontal-spacer);
+    margin: 0 auto;
 }

@@ -11,7 +11,7 @@ export const SearchIcon = ({ width = '1.6rem', height = '1.6rem', className }) =
     </svg>
 );
 
-export const HeadphoneIcon = ({ width = '1.6rem', height = '1.6rem', className }) => (
+export const HeadphoneIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
         width={width}
         height={height}
@@ -24,7 +24,7 @@ export const HeadphoneIcon = ({ width = '1.6rem', height = '1.6rem', className }
     </svg>
 );
 
-export const PersonIcon = ({ width = '1.6rem', height = '1.6rem', className }) => (
+export const PersonIcon = ({ width = '2rem', height = '2rem', className }) => (
     <svg
         width={width}
         height={height}
@@ -37,7 +37,7 @@ export const PersonIcon = ({ width = '1.6rem', height = '1.6rem', className }) =
     </svg>
 );
 
-export const BagIcon = ({ width = '1.6rem', height = '1.6rem', className }) => (
+export const BagIcon = ({ width = '1.7rem', height = '1.7rem', className }) => (
     <svg
         width={width}
         height={height}
