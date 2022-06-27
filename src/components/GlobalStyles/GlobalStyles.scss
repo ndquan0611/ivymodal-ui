@@ -5,6 +5,7 @@
     --white: #fff;
     --black: #221f20;
     --text-color: #57585a;
+    --grey: #6c6d70;
 
     // Font
     --font-family: 'Montserrat', sans-serif;
@@ -46,4 +47,13 @@ input,
 
 a[href] {
     text-decoration: none;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #d1d2d4;
+    background-color: var(--white);
+    transition: 0.3s ease;
 }

@@ -1,0 +1,33 @@
+.info {
+    display: flex;
+    margin-bottom: 24px;
+    margin-right: -10px;
+}
+
+.left a,
+.center a,
+.right a {
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 10px 0;
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.left {
+    flex: 0 0 32%;
+    background: #d73831;
+}
+
+.center {
+    flex: 0 0 36%;
+    background: #dc633a;
+}
+
+.right {
+    flex: 0 0 32%;
+    background: #ac2f33;
+}

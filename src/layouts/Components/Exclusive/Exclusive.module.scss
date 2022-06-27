@@ -1,0 +1,32 @@
+.wrapper {
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.head {
+    ul {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            margin-right: 56px;
+            font-size: 2rem;
+            display: inline-block;
+            cursor: pointer;
+            color: var(--grey);
+        }
+    }
+}
+
+.content {
+}

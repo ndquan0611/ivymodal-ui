@@ -1,5 +1,15 @@
+import Exclusive from '~/layouts/Components/Exclusive';
+import Info from '~/layouts/Components/Info';
+import Slider from '~/layouts/Components/Slider';
+
 function Home() {
-    return <h1>Home page</h1>;
+    return (
+        <>
+            <Info />
+            <Slider />
+            <Exclusive />
+        </>
+    );
 }
 
 export default Home;
