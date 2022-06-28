@@ -26,9 +26,9 @@ function Slider() {
                 }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
-                className={cx('slider')}
+                className={cx('wrapper')}
             >
-                <SwiperSlide className={cx('slider-item')}>
+                <SwiperSlide className={cx('slider')}>
                     <img src={images.banner1} />
                 </SwiperSlide>
             </Swiper>

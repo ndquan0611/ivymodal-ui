@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 
 function Info() {
     return (
-        <div className={cx('info')}>
+        <div className={cx('wrapper')}>
             <div className={cx('left')}>
                 <Link to={config.routes.cartegory}>
                     <span>Free Shipping đơn hàng nguyên giá</span>

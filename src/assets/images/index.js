@@ -8,6 +8,9 @@ const images = {
 
     // Banner
     banner1: require('~/assets/images/banner1.jpg'),
+    banner2: require('~/assets/images/banner2.jpg'),
+    banner3: require('~/assets/images/banner3.jpg'),
+    banner4: require('~/assets/images/banner4.jpg'),
 
     // Product
     product1: require('~/assets/images/product1.jpg'),
