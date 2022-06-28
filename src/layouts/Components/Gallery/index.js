@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 // Import Swiper React components
 // import required modules
-import { Navigation } from 'swiper';
+import { Autoplay, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/scss';
@@ -16,7 +16,7 @@ import config from '~/config';
 
 const cx = classNames.bind(styles);
 
-const galleryImg = [
+const GALLERY_IMGS = [
     {
         id: 1,
         img: images.gallery1,
@@ -53,10 +53,14 @@ function Gallery() {
                 slidesPerGroup={1}
                 loop={true}
                 navigation={true}
-                modules={[Navigation]}
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                }}
+                modules={[Autoplay, Navigation]}
                 className={cx('gallery')}
             >
-                {galleryImg.map((item) => (
+                {GALLERY_IMGS.map((item) => (
                     <SwiperSlide key={item.id}>
                         <Link to={config.routes.cartegory}>
                             <img src={item.img} alt="" />

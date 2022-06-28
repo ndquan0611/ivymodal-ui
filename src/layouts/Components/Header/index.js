@@ -5,12 +5,49 @@ import 'tippy.js/dist/tippy.css'; // optional
 
 import config from '~/config';
 import images from '~/assets/images';
-import { BagIcon, HeadphoneIcon, PersonIcon } from '~/components/Icons';
+import {
+    BagIcon,
+    ChatIcon,
+    EmailIcon,
+    HeadphoneIcon,
+    PawIcon,
+    PersonIcon,
+    PhoneIcon,
+    ReloadIcon,
+} from '~/components/Icons';
 import styles from './Header.module.scss';
 import Button from '~/components/Button';
 import Search from '../Search';
 
 const cx = classNames.bind(styles);
+
+const MENU_ITEMS = [
+    {
+        icon: <PhoneIcon />,
+        title: 'Hotline',
+        to: '/phone',
+    },
+    {
+        icon: <ChatIcon />,
+        title: 'Live Chat',
+        to: '/chat',
+    },
+    {
+        icon: <ReloadIcon />,
+        title: 'Messenger',
+        to: '/messenger',
+    },
+    {
+        icon: <EmailIcon />,
+        title: 'email',
+        to: '/email',
+    },
+    {
+        icon: <PawIcon />,
+        title: 'Tra cứu đơn hàng',
+        to: '/cartegory',
+    },
+];
 
 function Header() {
     const currentUser = true;
@@ -55,6 +92,7 @@ function Header() {
                                     <HeadphoneIcon />
                                 </button>
                             </Tippy>
+
                             <button className={cx('action-btn')}>
                                 <PersonIcon />
                             </button>

@@ -16,31 +16,33 @@ const cx = classNames.bind(styles);
 
 function Brand() {
     return (
-        <Swiper
-            slidesPerView={2}
-            spaceBetween={30}
-            slidesPerGroup={1}
-            loop={true}
-            navigation={true}
-            modules={[Navigation]}
-            className={cx('wrapper')}
-        >
-            <SwiperSlide>
-                <Link to={config.routes.cartegory}>
-                    <img src={images.banner3} />
-                </Link>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Link to={config.routes.cartegory}>
-                    <img src={images.banner4} />
-                </Link>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Link to={config.routes.cartegory}>
-                    <img src={images.banner5} />
-                </Link>
-            </SwiperSlide>
-        </Swiper>
+        <div className={cx('wrapper')}>
+            <Swiper
+                slidesPerView={2}
+                spaceBetween={30}
+                slidesPerGroup={1}
+                loop={true}
+                navigation={true}
+                modules={[Navigation]}
+                className={cx('brand')}
+            >
+                <SwiperSlide>
+                    <Link to={config.routes.cartegory}>
+                        <img src={images.banner3} />
+                    </Link>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Link to={config.routes.cartegory}>
+                        <img src={images.banner4} />
+                    </Link>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Link to={config.routes.cartegory}>
+                        <img src={images.banner5} />
+                    </Link>
+                </SwiperSlide>
+            </Swiper>
+        </div>
     );
 }
 
