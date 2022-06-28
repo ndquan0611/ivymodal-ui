@@ -1,0 +1,21 @@
+.wrapper {
+    margin-bottom: 40px;
+    user-select: none;
+}
+
+.title {
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 4.6rem;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.gallery {
+    img {
+        width: 100%;
+        display: block;
+    }
+}

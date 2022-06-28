@@ -45,11 +45,10 @@
 
 .outline {
     color: var(--black);
-    border-color: currentColor;
+    border-color: var(--black);
     transition: 0.3s ease;
 
     &:hover {
-        border-color: currentColor;
         color: var(--white);
         background-color: var(--black);
     }

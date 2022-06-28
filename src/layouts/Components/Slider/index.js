@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 // Import Swiper React components
 // import required modules
@@ -11,6 +12,7 @@ import 'swiper/scss/navigation';
 
 import styles from './Slider.module.scss';
 import images from '~/assets/images';
+import config from '~/config';
 
 const cx = classNames.bind(styles);
 
@@ -29,7 +31,9 @@ function Slider() {
                 className={cx('wrapper')}
             >
                 <SwiperSlide className={cx('slider')}>
-                    <img src={images.banner1} />
+                    <Link to={config.routes.cartegory}>
+                        <img src={images.banner1} />
+                    </Link>
                 </SwiperSlide>
             </Swiper>
         </>
