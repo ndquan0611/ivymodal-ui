@@ -1,0 +1,46 @@
+.menu-list {
+    width: 253px;
+
+    .menu-item {
+        margin-left: 0;
+    }
+}
+
+.menu-popper {
+    margin-top: 10px;
+}
+
+.menu-body {
+    padding-bottom: 10px;
+}
+
+.menu-item {
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: 0;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    color: #808285;
+
+    &.setparate {
+        border-top: 1px solid #f7f8f9;
+    }
+
+    &:hover {
+        color: var(--black);
+    }
+}
+
+// Header
+.header {
+    padding: 24px 24px 0;
+    margin-bottom: 20px;
+
+    .title {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: #221f20;
+    }
+}

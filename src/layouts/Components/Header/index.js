@@ -15,9 +15,11 @@ import {
     PhoneIcon,
     ReloadIcon,
 } from '~/components/Icons';
+import { Wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './Header.module.scss';
 import Button from '~/components/Button';
 import Search from '../Search';
+import Menu from '~/components/Popper/Menu';
 
 const cx = classNames.bind(styles);
 
@@ -26,6 +28,7 @@ const MENU_ITEMS = [
         icon: <PhoneIcon />,
         title: 'Hotline',
         to: '/phone',
+        setparate: true,
     },
     {
         icon: <ChatIcon />,
@@ -39,7 +42,7 @@ const MENU_ITEMS = [
     },
     {
         icon: <EmailIcon />,
-        title: 'email',
+        title: 'Email',
         to: '/email',
     },
     {
@@ -87,11 +90,11 @@ function Header() {
                         <>
                             <Search />
 
-                            <Tippy content="Headphone">
+                            <Menu items={MENU_ITEMS}>
                                 <button className={cx('action-btn')}>
                                     <HeadphoneIcon />
                                 </button>
-                            </Tippy>
+                            </Menu>
 
                             <button className={cx('action-btn')}>
                                 <PersonIcon />
