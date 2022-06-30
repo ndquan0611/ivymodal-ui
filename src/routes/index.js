@@ -1,6 +1,5 @@
 import config from '~/config';
-import Cartegory from '~/pages/Cartegory';
-import Home from '~/pages/Home';
+import { Home, Cartegory, Login, Register } from '~/pages';
 
 const publicRoutes = [
     {
@@ -10,6 +9,14 @@ const publicRoutes = [
     {
         path: config.routes.cartegory,
         component: Cartegory,
+    },
+    {
+        path: config.routes.login,
+        component: Login,
+    },
+    {
+        path: config.routes.register,
+        component: Register,
     },
 ];
 const privateRoutes = [];

@@ -14,23 +14,25 @@ function Menu({ children, items = [] }) {
     };
 
     return (
-        <Tippy
-            interactive
-            delay={[0, 700]}
-            offset={[14, 8]}
-            placement="bottom-end"
-            trigger="click"
-            render={(attrs) => (
-                <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
-                    <PopperWrapper className={cx('menu-popper')}>
-                        <Header title="Trợ giúp" />
-                        <div className={cx('menu-body')}>{renderItems()}</div>
-                    </PopperWrapper>
-                </div>
-            )}
-        >
-            {children}
-        </Tippy>
+        <div>
+            <Tippy
+                interactive
+                delay={[0, 500]}
+                offset={[14, 8]}
+                placement="bottom-end"
+                trigger="click"
+                render={(attrs) => (
+                    <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
+                        <PopperWrapper className={cx('menu-popper')}>
+                            <Header title="Trợ giúp" />
+                            <div className={cx('menu-body')}>{renderItems()}</div>
+                        </PopperWrapper>
+                    </div>
+                )}
+            >
+                {children}
+            </Tippy>
+        </div>
     );
 }
 

@@ -97,7 +97,9 @@ function Header() {
                             </Menu>
 
                             <button className={cx('action-btn')}>
-                                <PersonIcon />
+                                <Link to={config.routes.login}>
+                                    <PersonIcon />
+                                </Link>
                             </button>
                             <button className={cx('action-btn')}>
                                 <BagIcon />

@@ -63,7 +63,6 @@ const itemSearch = [
 
 function Search() {
     const [searchItem, setSearchItem] = useState(itemSearch);
-    const [searchValue, setSearchValue] = useState('');
     const [searchResult, setSearchResult] = useState([]);
 
     useEffect(() => {

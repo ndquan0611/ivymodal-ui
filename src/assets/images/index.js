@@ -12,6 +12,7 @@ const images = {
     banner3: require('~/assets/images/banner3.jpg'),
     banner4: require('~/assets/images/banner4.jpg'),
     banner5: require('~/assets/images/banner5.jpg'),
+    banner6: require('~/assets/images/banner6.jpg'),
 
     // Product
     product1: require('~/assets/images/product1.jpg'),
@@ -27,6 +28,8 @@ const images = {
     gallery4: require('~/assets/images/gallery4.jpg'),
     gallery5: require('~/assets/images/gallery5.jpg'),
     gallery6: require('~/assets/images/gallery6.jpg'),
+
+    captcha: require('~/assets/images/captcha.png'),
 };
 
 export default images;

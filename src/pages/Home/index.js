@@ -1,9 +1,4 @@
-import Brand from '~/layouts/Components/Brand';
-import Exclusive from '~/layouts/Components/Exclusive';
-import Gallery from '~/layouts/Components/Gallery';
-import Info from '~/layouts/Components/Info';
-import Slider from '~/layouts/Components/Slider';
-import Trending from '~/layouts/Components/Trending';
+import { Info, Slider, Exclusive, Trending, Brand, Gallery } from '~/layouts/Components';
 
 function Home() {
     return (

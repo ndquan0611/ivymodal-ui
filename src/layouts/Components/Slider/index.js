@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 // Import Swiper React components
 // import required modules
-import { Pagination, Navigation } from 'swiper';
+import { Autoplay, Pagination, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/scss';
@@ -22,17 +22,27 @@ function Slider() {
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
+                slidesPerGroup={1}
                 loop={true}
                 pagination={{
                     clickable: true,
                 }}
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                }}
                 navigation={true}
-                modules={[Pagination, Navigation]}
+                modules={[Autoplay, Pagination, Navigation]}
                 className={cx('wrapper')}
             >
                 <SwiperSlide className={cx('slider')}>
                     <Link to={config.routes.cartegory}>
                         <img src={images.banner1} />
+                    </Link>
+                </SwiperSlide>
+                <SwiperSlide className={cx('slider')}>
+                    <Link to={config.routes.cartegory}>
+                        <img src={images.banner6} />
                     </Link>
                 </SwiperSlide>
             </Swiper>

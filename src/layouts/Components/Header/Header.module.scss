@@ -18,6 +18,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background: #e7e8e9;
+        width: calc(100% - 30px);
+        height: 1px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 nav {
@@ -75,6 +87,12 @@ nav {
     background-color: transparent;
     margin-right: 15px;
     cursor: pointer;
+
+    a {
+        color: #706f6f;
+        line-height: 0;
+        display: inline-block;
+    }
 }
 
 .badge {
