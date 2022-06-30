@@ -66,11 +66,16 @@
 
 .thumb {
     margin-bottom: 17px;
+    overflow: hidden;
 
     img {
         width: 100%;
         object-fit: cover;
         display: block;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 }
 

@@ -18,7 +18,7 @@ const cx = classNames.bind(styles);
 
 function Slider() {
     return (
-        <>
+        <div className={cx('wrapper')}>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
@@ -33,20 +33,20 @@ function Slider() {
                 }}
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className={cx('wrapper')}
+                className={cx('slider')}
             >
-                <SwiperSlide className={cx('slider')}>
+                <SwiperSlide>
                     <Link to={config.routes.cartegory}>
                         <img src={images.banner1} />
                     </Link>
                 </SwiperSlide>
-                <SwiperSlide className={cx('slider')}>
+                <SwiperSlide>
                     <Link to={config.routes.cartegory}>
                         <img src={images.banner6} />
                     </Link>
                 </SwiperSlide>
             </Swiper>
-        </>
+        </div>
     );
 }
 

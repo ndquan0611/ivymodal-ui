@@ -138,34 +138,32 @@ function Register() {
                                     Mời nhập các ký tự trong hình vào ô sau:
                                     <span>*</span>
                                 </label>
-                                <input placeholder="Nhập lại mật khẩu..." />
+                                <input />
                             </div>
                         </div>
                         <p className={cx('captcha')}>
                             <img src={images.captcha} />
                         </p>
-
                         <div className={cx('checkbox')}>
-                            <input type="checkbox" />
-                            <label>
-                                <span>
-                                    Đồng ý với các
-                                    <Link to={config.routes.cartegory}> điều khoản </Link>
-                                    của IVY
-                                </span>
-                            </label>
-                        </div>
-                        <div className={cx('checkbox')}>
-                            <input type="checkbox" />
-                            <label>
-                                <span>Đăng ký nhận bản tin</span>
-                            </label>
-                        </div>
-
-                        <div>
-                            <div className={cx('btn')}>
-                                <Button primary>Đăng ký</Button>
+                            <div>
+                                <input type="checkbox" />
+                                <label>
+                                    <span>
+                                        Đồng ý với các
+                                        <Link to={config.routes.cartegory}> điều khoản </Link>
+                                        của IVY
+                                    </span>
+                                </label>
                             </div>
+                            <div>
+                                <input type="checkbox" />
+                                <label>
+                                    <span>Đăng ký nhận bản tin</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div className={cx('btn')}>
+                            <Button primary>Đăng ký</Button>
                         </div>
                     </div>
                 </form>

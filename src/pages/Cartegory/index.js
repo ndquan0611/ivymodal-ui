@@ -1,5 +1,11 @@
+import { Breadcrumb } from '~/layouts/Components';
+
 function Cartegory() {
-    return <h1>Cartegory page</h1>;
+    return (
+        <>
+            <Breadcrumb />
+        </>
+    );
 }
 
 export default Cartegory;

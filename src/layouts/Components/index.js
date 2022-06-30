@@ -7,3 +7,6 @@ export { default as Exclusive } from './Exclusive';
 export { default as Trending } from './Trending';
 export { default as Brand } from './Brand';
 export { default as Gallery } from './Gallery';
+
+// Cartegory
+export { default as Breadcrumb } from './Breadcrumb';
